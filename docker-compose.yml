@@ -1,0 +1,112 @@
+version: '3.4'
+
+services:
+  user.api:
+    image: ${DOCKER_REGISTRY-}userapi
+    build:
+      context: .
+      dockerfile: src/User/User.API/Dockerfile
+    depends_on:
+      - db_service_user
+    networks:
+      - db-network
+
+  product.api:
+    image: ${DOCKER_REGISTRY-}productapi
+    build:
+      context: .
+      dockerfile: src/Product/Product.API/Dockerfile
+    depends_on:
+      - db_service_product
+    networks:
+      - db-network
+
+  payment.api:
+    image: ${DOCKER_REGISTRY-}paymentapi
+    build:
+      context: .
+      dockerfile: src/Payment/Payment.API/Dockerfile
+    depends_on:
+      - db_service_payment
+    networks:
+      - db-network
+
+  order.api:
+    image: ${DOCKER_REGISTRY-}orderapi
+    build:
+      context: .
+      dockerfile: src/Order/Order.API/Dockerfile
+    depends_on:
+      - db_service_order
+    networks:
+      - db-network
+
+  apigateway.ui:
+    image: ${DOCKER_REGISTRY-}apigatewayui
+    build:
+      context: .
+      dockerfile: src/APIGateway/APIGateway.UI/Dockerfile
+    
+  db_service_user:
+    container_name: db_user
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1352
+      - POSTGRES_DB=UserDB
+    volumes:
+      - pgdata:/var/lib/postgresql/UserDB
+    ports:
+      - "5432:5432"
+    networks:
+      - db-network
+  
+  db_service_product:
+    container_name: db_product
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1352
+      - POSTGRES_DB=ProductDB
+    volumes:
+      - pgdata:/var/lib/postgresql/ProductDB
+    ports:
+      - "5432:5432"
+    networks:
+      - db-network
+
+  db_service_payment:
+    container_name: db_payment
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1352
+      - POSTGRES_DB=PaymentDB
+    volumes:
+      - pgdata:/var/lib/postgresql/PaymentDB
+    ports:
+      - "5432:5432"
+    networks:
+      - db-network
+
+  db_service_order:
+    container_name: db_order
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1352
+      - POSTGRES_DB=OrderDB
+    volumes:
+      - pgdata:/var/lib/postgresql/OrderDB
+    ports:
+      - "5432:5432"
+    networks:
+      - db-network
+
+networks:
+  db-network:
+    driver: bridge
+
+volumes:
+  pgdata:
+
