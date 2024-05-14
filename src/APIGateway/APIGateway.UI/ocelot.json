@@ -5,10 +5,10 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "user api",
+          "Host": "user.api",
           "Port": 8080
         }
-      ],
+      ], 
       "UpstreamPathTemplate": "/api/Users/Create",
       "UpstreamHttpMethod": [ "POST" ]
     },
@@ -59,7 +59,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "payment.api",
           "Port": 8080
         }
       ],
@@ -71,7 +71,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "payment.api",
           "Port": 8080
         }
       ],
@@ -83,7 +83,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "payment.api",
           "Port": 8080
         }
       ],
@@ -95,7 +95,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "payment.api",
           "Port": 8080
         }
       ],
@@ -112,7 +112,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "order.api",
           "Port": 8080
         }
       ],
@@ -124,7 +124,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "order.api",
           "Port": 8080
         }
       ],
@@ -136,7 +136,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "order.api",
           "Port": 8080
         }
       ],
@@ -148,7 +148,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "order.api",
           "Port": 8080
         }
       ],
@@ -165,7 +165,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "product.api",
           "Port": 8080
         }
       ],
@@ -177,7 +177,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "product.api",
           "Port": 8080
         }
       ],
@@ -189,7 +189,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "product.api",
           "Port": 8080
         }
       ],
@@ -201,7 +201,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
+          "Host": "product.api",
           "Port": 8080
         }
       ],
