@@ -5,8 +5,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7059
+          "Host": "user api",
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Users/Create",
@@ -17,8 +17,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7059
+          "Host": "user.api",
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Users/GetAll",
@@ -29,8 +29,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7059
+          "Host": "user.api",
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Users/Delete",
@@ -41,8 +41,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7059
+          "Host": "user.api",
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Users/Update",
@@ -60,7 +60,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7202
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Payments/Create",
@@ -72,7 +72,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7202
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Payments/GetAll",
@@ -84,7 +84,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7202
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Payments/Delete",
@@ -96,7 +96,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7202
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Payments/Update",
@@ -113,7 +113,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7171
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Orders/Create",
@@ -125,7 +125,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7171
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Orders/GetAll",
@@ -137,7 +137,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7171
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Orders/Delete",
@@ -149,7 +149,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 7171
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Orders/Update",
@@ -166,7 +166,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5231
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Products/Create",
@@ -178,7 +178,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5231
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Products/GetAll",
@@ -190,7 +190,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5231
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Products/Delete",
@@ -202,7 +202,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5231
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/Products/Update",
